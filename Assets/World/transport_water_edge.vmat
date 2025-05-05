@@ -1,0 +1,18 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/transport_water_edge.shader"
+
+	//---- Fog ----
+	g_flFogDensity "0.596"
+	g_flFogEndDistanceWs "10000.000"
+	g_fogColor "[0.023529 0.129412 0.207843 1.000000]"
+
+	//---- Water ----
+	g_WaterColor "[0.035294 0.184314 0.301961 0.905882]"
+
+	//---- Waves ----
+	g_flWaveScale "20.877"
+	g_flWaveScrollSpeed "0.112"
+}

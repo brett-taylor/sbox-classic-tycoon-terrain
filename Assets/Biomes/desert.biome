@@ -1,0 +1,17 @@
+{
+  "Name": "Desert",
+  "Temperature": 0.65,
+  "Rainfall": 0.35,
+  "Disabled": false,
+  "GroundColor": "0.91373,0.76078,0.48627,1",
+  "GroundColorOffsetMin": 0,
+  "GroundColorOffsetMax": 0.1,
+  "PossiblePlants": [
+    "cache/plants/cactus_one.building",
+    "cache/plants/cactus_two.building",
+    "cache/plants/cactus_six.building"
+  ],
+  "LonePlantProbability": 0.015,
+  "__references": [],
+  "__version": 0
+}

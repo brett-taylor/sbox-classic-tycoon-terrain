@@ -1,0 +1,478 @@
+{
+  "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
+  "GameObjects": [
+    {
+      "__guid": "6016ec45-fa11-4191-a8a6-03c4f22c1cbd",
+      "Flags": 0,
+      "Name": "_Core",
+      "Position": "-558.6374,-301.0092,380.5588",
+      "Enabled": true,
+      "Components": [],
+      "Children": [
+        {
+          "__guid": "6ae001e4-4660-4f29-aef9-69ebbf993acf",
+          "Flags": 0,
+          "Name": "Scene Information",
+          "Position": "558.6374,301.0092,-380.5588",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SceneInformation",
+              "__guid": "83f5cca9-2c05-4f6f-abbe-32d4af690d9d",
+              "Author": null,
+              "Changes": "",
+              "Description": "",
+              "Group": null,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "SceneTags": "",
+              "Title": "minimal",
+              "Version": null
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
+          "Flags": 0,
+          "Name": "2D Skybox",
+          "Position": "558.6374,301.0092,-380.5588",
+          "Tags": "skybox",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkyBox2D",
+              "__guid": "de79e9e0-5c37-4c54-ac67-bfcdb1d5483b",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "SkyIndirectLighting": true,
+              "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.EnvmapProbe",
+              "__guid": "f3e304db-baab-4c1a-a4ec-8442585c2d62",
+              "Bounds": {
+                "Mins": "-100000,-100000,-100000",
+                "Maxs": "100000,100000,100000"
+              },
+              "DelayBetweenUpdates": 0.1,
+              "Feathering": 0.02,
+              "FrameInterval": 5,
+              "MaxDistance": 512,
+              "MultiBounce": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Projection": "Sphere",
+              "RenderDynamically": false,
+              "Resolution": "Small",
+              "Texture": "textures/cubemaps/default2.vtex",
+              "TintColor": "1,1,1,1",
+              "UpdateStrategy": "OnEnabled",
+              "ZFar": 4096,
+              "ZNear": 16
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
+          "Flags": 0,
+          "Name": "Sun",
+          "Position": "558.6374,301.0092,-380.5588",
+          "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+          "Tags": "light_directional,light",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "d3659344-a90d-48fa-927a-095f70fe041f",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.94419,0.97767,1,1",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Shadows": true,
+              "SkyColor": "0.2532,0.32006,0.35349,1"
+            }
+          ],
+          "Children": []
+        }
+      ]
+    },
+    {
+      "__guid": "dbcb802d-f8c7-42b5-b9c5-94f4ace40ea0",
+      "Flags": 0,
+      "Name": "WorldManager",
+      "Position": "-99.46267,-779.8189,1287.638",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "TycoonTerrain.Game.World.WorldSettings",
+          "__guid": "9b6a15da-b8bd-4ebc-885c-0c8cf1ebb61c",
+          "BiomeDistortionFrequency": 0.5,
+          "BiomeDistortionMultiplier": 15,
+          "BiomeFuzzinessDropOff": 2,
+          "BiomeFuzzinessRange": 1,
+          "BiomeRainfallFrequency": 0.003,
+          "BiomeTemperatureFrequency": 0.003,
+          "CellSize": 118.11,
+          "ChunkCountX": 15,
+          "ChunkCountY": 15,
+          "ChunkSizeX": 15,
+          "ChunkSizeY": 15,
+          "FallOffStrength": 7,
+          "HeightLevel": 90,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SeaHeightOffset": 45,
+          "SeaLevel": 3,
+          "Seed": 61510681,
+          "SideWallHeight": 1000
+        },
+        {
+          "__type": "TycoonTerrain.Game.World.WorldHeightManager",
+          "__guid": "09f075c5-35fd-4270-b3d6-bc6a7bcad776",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "TycoonTerrain.Game.World.BiomeManager",
+          "__guid": "eab16ba5-0672-409e-9d16-df5f06a27da3",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "TycoonTerrain.Game.World.WorldSurfaceColorManager",
+          "__guid": "1e707b17-7018-4606-824c-b1153b5fce78",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        },
+        {
+          "__type": "TycoonTerrain.Game.World.WorldVisualManager",
+          "__guid": "0f0bdfa0-66a9-46eb-bdbb-c3767d654559",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "TerrainContainer": {
+            "_type": "gameobject",
+            "go": "80b2a9ab-ba16-41e0-b7ac-68531535f516"
+          }
+        },
+        {
+          "__type": "TycoonTerrain.Game.World.Physics.WorldPhysicsManager",
+          "__guid": "6f4c850c-83fa-4311-84dd-8c012819c07b",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "TerrainContainer": {
+            "_type": "gameobject",
+            "go": "80b2a9ab-ba16-41e0-b7ac-68531535f516"
+          }
+        },
+        {
+          "__type": "TycoonTerrain.Game.World.WorldManager",
+          "__guid": "286ec79b-33a3-48e4-873d-b643692dd20e",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "bcff14d4-1c9d-4860-bcf6-b85728e0e5fb",
+      "Flags": 0,
+      "Name": "LocalPlayer",
+      "Position": "-2316.47,-1892.494,0.000223875",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "TycoonTerrain.Game.Player.PlayerCameraController",
+          "__guid": "dd9e3ad3-6ec0-4907-ab76-e708c07e3c33",
+          "CameraComponent": {
+            "_type": "component",
+            "component_id": "cf3cbf96-22b6-4be4-a5d0-672a96c17f9f",
+            "go": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+            "component_type": "CameraComponent"
+          },
+          "CameraGameObject": {
+            "_type": "gameobject",
+            "go": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a"
+          },
+          "MaxCameraDistance": 25000,
+          "MaxCameraPitch": 60,
+          "MinCameraDistance": 250,
+          "MinCameraPitch": 10,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PanKeyboardSpeed": {
+            "rangey": "500,3000",
+            "frames": [
+              {
+                "x": 0,
+                "y": 0,
+                "in": -1,
+                "out": 1,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 1,
+                "y": 1,
+                "in": -1,
+                "out": 1,
+                "mode": "Mirrored"
+              }
+            ]
+          },
+          "PanLerpTime": 5,
+          "PanMouseSpeed": {
+            "rangey": "50,1000",
+            "frames": [
+              {
+                "x": 0,
+                "y": 0,
+                "in": -1,
+                "out": 1,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 1,
+                "y": 1,
+                "in": -1,
+                "out": 1,
+                "mode": "Mirrored"
+              }
+            ]
+          },
+          "PositionZOffset": 50,
+          "RotateLerpTime": 20,
+          "RotateSpeed": -0.2,
+          "TargetCameraPitch": 27,
+          "TargetCameraYaw": 52.6,
+          "TargetCameraZoom": 0.38,
+          "TargetLookObject": {
+            "_type": "gameobject",
+            "go": "273498e0-6e9d-4e89-9345-5f38cc980575"
+          },
+          "ZoomLerpTime": 15,
+          "ZoomSpeed": {
+            "rangey": "0,0.1",
+            "frames": [
+              {
+                "x": 0,
+                "y": 0.051282052,
+                "in": -1.6551725,
+                "out": 1.6551725,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 1,
+                "y": 1,
+                "in": -1,
+                "out": 1,
+                "mode": "Mirrored"
+              }
+            ]
+          }
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
+          "Flags": 0,
+          "Name": "Camera",
+          "Position": "-439.8065,-633.0013,1070.691",
+          "Rotation": "-0.3696438,0.09904578,0.8923991,0.2391176",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "cf3cbf96-22b6-4be4-a5d0-672a96c17f9f",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 60,
+              "FovAxis": "Horizontal",
+              "IsMainCamera": true,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 60000,
+              "ZNear": 10
+            },
+            {
+              "__type": "Sandbox.Bloom",
+              "__guid": "d73ef723-c888-41d4-802e-f797c79318be",
+              "__version": 1,
+              "Gamma": 2.2,
+              "Mode": "Additive",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Strength": 0.5,
+              "Threshold": 1.25,
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Tonemapping",
+              "__guid": "9d76f362-7227-40eb-a189-69353c780c46",
+              "__version": 3,
+              "AutoExposureEnabled": true,
+              "ExposureCompensation": 1.32,
+              "ExposureMethod": "RGB",
+              "MaximumExposure": 2,
+              "MinimumExposure": 1,
+              "Mode": "HableFilmic",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Rate": 1
+            },
+            {
+              "__type": "Sandbox.Sharpen",
+              "__guid": "0bffee5e-19f2-41c4-88f9-faefbcce6bf4",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Scale": 0.2
+            },
+            {
+              "__type": "Sandbox.Highlight",
+              "__guid": "08b39124-7fec-448d-a126-2ac1efc9414f",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null
+            },
+            {
+              "__type": "Sandbox.AmbientOcclusion",
+              "__guid": "5e76f852-e535-47a4-8f6c-516f4e8ac6fc",
+              "__version": 1,
+              "DenoiseMode": "Temporal",
+              "FalloffRange": 0.75,
+              "Intensity": 0.15,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Quality": "Low",
+              "Radius": 128,
+              "ThinCompensation": 0
+            }
+          ],
+          "Children": []
+        },
+        {
+          "__guid": "273498e0-6e9d-4e89-9345-5f38cc980575",
+          "Flags": 0,
+          "Name": "TargetLook",
+          "Position": "6139.52,5541.422,0.000223875",
+          "Enabled": true,
+          "Components": [],
+          "Children": []
+        }
+      ]
+    },
+    {
+      "__guid": "80b2a9ab-ba16-41e0-b7ac-68531535f516",
+      "Flags": 0,
+      "Name": "Terrain",
+      "Enabled": true,
+      "Components": [],
+      "Children": []
+    }
+  ],
+  "SceneProperties": {
+    "NetworkInterpolation": true,
+    "TimeScale": 1,
+    "WantsSystemScene": true,
+    "Metadata": {
+      "Title": "minimal"
+    },
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 2,
+  "Title": "minimal",
+  "Description": null,
+  "__references": [],
+  "__version": 2
+}

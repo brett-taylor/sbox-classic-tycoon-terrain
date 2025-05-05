@@ -1,0 +1,27 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/transport_terrain_edge.shader"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Lava Appearance ----
+	g_flLavaVoroniAngle "217.263"
+	g_flLavaVoroniDensity "1.930"
+	g_flLavaVoroniEmissionStrength "5.263"
+	g_flLavaVoroniMovementSpeed "2.526"
+	g_flLavaVoroniScale "540.351"
+	g_flLavaVoroniStrength "1.053"
+	g_vBaseLavaColour "[0.360784 0.000000 0.000000 0.000000]"
+	g_vLavaVoroniColour "[1.000000 0.466667 0.000000 0.000000]"
+
+	//---- Lava Fade ----
+	g_flLavaFadeEndHeight "-922.807"
+	g_flLavaGrowShrinkAmount "45.263"
+	g_flLavaGrowShrinkTime "0.947"
+
+	//---- Terrain ----
+	g_vBaseDirtColour "[0.305882 0.180392 0.074510 0.000000]"
+}

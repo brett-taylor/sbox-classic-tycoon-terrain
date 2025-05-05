@@ -1,0 +1,17 @@
+{
+  "Name": "Temperate",
+  "Temperature": 0.5,
+  "Rainfall": 0.5,
+  "Disabled": false,
+  "GroundColor": "0.41569,0.54118,0.35686,1",
+  "GroundColorOffsetMin": 0,
+  "GroundColorOffsetMax": 0.1,
+  "PossiblePlants": [
+    "cache/plants/temperate_tree_01.building",
+    "cache/plants/temperature_tree_pine_01.building",
+    "cache/plants/temperature_tree_pine_02.building"
+  ],
+  "LonePlantProbability": 0.015,
+  "__references": [],
+  "__version": 0
+}

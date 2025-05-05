@@ -1,0 +1,19 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/transport_terrain.shader"
+
+	//---- Clouds Layer ----
+	g_CloudsIntensity "0.263"
+	g_CloudsMovement "[0.114 0.027]"
+	g_CloudsScale "3508.772"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Terrain Grid ----
+	g_GridColor "[0.000000 0.000000 0.000000 0.580392]"
+	g_GridLineWidth "0.100"
+	g_GridSize "118.110"
+}

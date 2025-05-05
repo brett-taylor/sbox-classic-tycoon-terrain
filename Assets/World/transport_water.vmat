@@ -1,0 +1,26 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/transport_water.shader"
+
+	//---- Foam ----
+	g_flFoamDepth "23.158"
+	g_flFoamFade "0.815"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Translucent ----
+	g_flOpacityScale "1.000"
+
+	//---- Water ----
+	g_flDeepWaterColor "[0.133333 0.384314 0.576471 0.000000]"
+	g_flDeepWaterColorHeight "143.860"
+	g_flLightbias "[0.850 0.903]"
+	g_flShallowWaterColor "[0.352941 0.741176 0.788235 0.000000]"
+
+	//---- Waves ----
+	g_flWaveScale "20.877"
+	g_flWaveScrollSpeed "0.112"
+}

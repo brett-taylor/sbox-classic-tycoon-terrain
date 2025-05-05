@@ -1,0 +1,16 @@
+{
+  "Name": "Artic",
+  "Temperature": 0.3,
+  "Rainfall": 0.3,
+  "Disabled": false,
+  "GroundColor": "0.97674,0.97674,0.97674,1",
+  "GroundColorOffsetMin": 0,
+  "GroundColorOffsetMax": -0.15,
+  "PossiblePlants": [
+    "cache/plants/tree_pine_snow_02.building",
+    "cache/plants/tree_pine_large_snow_02.building"
+  ],
+  "LonePlantProbability": 0.005,
+  "__references": [],
+  "__version": 0
+}
