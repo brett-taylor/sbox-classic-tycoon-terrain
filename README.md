@@ -19,7 +19,8 @@ A terrain system for the game S&Box by Facepunch that is in the style of a class
 ![Example Terrain](/media/example-terrain.png)
 
 ### Terrain generation nideo
-![Terrain Generation](/media/terrain-generation.mp4)
+https://github.com/user-attachments/assets/6a9c483f-b215-4c26-b483-07fd902db48f
 
 ### Terrain used in vehicle driving project
-![Project Example](/media/project-example.mp4)
+https://github.com/user-attachments/assets/fb731273-a219-4995-8fbe-a1d379aad54d
+
